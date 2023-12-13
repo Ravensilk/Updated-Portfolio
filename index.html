@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Jan Cabrera</title>
+    </head>
+    <body class="lightmode g-0 scrollable">
+      <div class="container-fluid" id="nav" style="background-color: #e3f2fd" data-bs-theme="light">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 col-10">
+          <nav class="navbar navbar-expand-lg sticky-top" id="navBar">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo-no-background.png" id="logo" width="100" alt="jkc-logo-for-website"></a>
+              <button class="navbar-toggler" id="toggler1" type="button" onclick="showNav()">
+                <span class="navbar-toggler-icon" id="togglericon"></span>
+                </button>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navlist">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="educ.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                  <span class="navbar-text" id="cs50">
+                    CS50's Homepage Exercise
+                  </span>
+              </div>
+              </nav>
+            </div>
+          <div class="col-lg-1 col-md-1 col-2 g-0">
+                <label class="switch">
+                <input type="checkbox" id="slider" onClick="changeBg()">
+                <span class="slider round flip" id="slide"><span class="lightbg" id="som"></span></span>
+              </label>
+          </div>
+        </div>
+      </div>
+      <section id="content">
+          <div class="container-fluid" id="intro">
+            <div class="row">
+              <div id="filler" class="col-1"></div>
+              <div class="col-lg-6 col-12 p-5">
+                <h1 class="display-2">Hi! My name is<br><span id="name" class="writelightbg"></span></h1>
+                <h3>experimentation and trial & error are my hobbies.</h3><br>
+                <form action="" target="_blank">
+                <button id="indexbutton" class="indexbutton">View my CV</button>
+                </form>
+              </div>
+              <div class="col-lg-5 col-12" id="mypic"><img id="photo" src="img/photo.jpg" alt="jan-cabrera-photo"></div>
+            </div>
+          </div>
+      </section>
+      <footer>
+      <h4 class="copyright">Ⓒ 2023 · Jan Cabrera</h4><h4 class="copyright">&nbsp;·&nbsp;</h4><a href="https://github.com/ravensilk" target="_blank"><img id="github" src="img/github-mark.svg" alt="github-logo"></a>
+      <a href="https://github.com/ravensilk" target="_blank"><h4>&nbsp;Github</h4></a><h4>&nbsp;·&nbsp;</h4>
+      <a href="https://www.linkedin.com/in/jan-kristopher-cabrera-41891611a/" target="_blank"><img id="linkedin" src="img/blue-linkedin.png" alt="linkedin-logo"></a><a href="https://www.linkedin.com/in/jan-kristopher-cabrera-41891611a/" target="_blank"><h4>&nbsp;LinkedIn</h4></a><h4 class="copyright">&nbsp;·&nbsp;</h4>
+      </footer>
+      <div class="overlay" id="navbarOverlay">
+        <div class="overlay-content">
+          <a class="navl" href="#">Home</a>
+          <a class="navl" href="portfolio.html">Portfolio</a>
+          <a class="navl" href="educ.html">Education</a>
+          <a class="navl" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </body>
+</html>
