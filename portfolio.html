@@ -49,62 +49,76 @@
           </div>
         </div>
       </div>
-      <section id="languages">
-        <div class="container-fluid">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-3 col-12" id="techstack1">
-              <h3 class="techstack display-6">Languages I've used:</h3>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/python-logo.svg" alt="python-logo"><h4>Python</h4></div>
-                </div>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/c-logo.svg" alt="c-logo"><h4>C</h4></div>
-                </div>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/php-logo.png" alt="php-logo"><h4>PHP</h4></div>
-                </div>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/js-logo.png" alt="javascript-logo"><h4>Javascript</h4></div>
-                </div>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/sql-logo.png" alt="sql-logo"><h4>SQL</h4></div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-12" id="techstack2">
-              <h3 class="techstack display-6">Tech I've learned:</h3>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/html-logo.png" alt="html5-logo"><h4>HTML</h4></div>
+      <section id="languages" class="d-flex flex-column">
+        <h1 class="display-5 pb-1">Projects and Tech Stack</h1>
+        <div class="row">
+          <div class="col-7 px-1 carousel-show d-flex flex-column justify-content-center px-0">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators pb-2">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/css-logo.png" alt="css3-logo"><h4>CSS</h4></div>
-              </div>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/flask-logo.png" alt="django-logo"><h4>Flask</h4></div>
-              </div>
-              <div class="row my-2">
-                <div class="col tstack"><img class="tslogo" src="img/mysql-logo.png" alt="mysql-logo"><h4>MySQL</h4></div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-12" id="techstack3">
-              <h3 class="techstack display-6">Projects I've Worked on: </h3>
-                <div id="carouselExample" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="img/portfoliowebsite.png" class="d-block w-100 caroudarkbrdr" alt="portfolio-carousel">
-                      <br>
-                      <h5>Portfolio Website</h5>
-                      <p>Made with HTML, CSS and vanilla Javascript.</p>
-                    </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="carouselimg"><img src="img/portfolioimg.png" class="d-block w-75" alt="..."></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Portfolio Website</h5>
+                    <p>A showcase of my skills specifically in front-end development using Javascript, HTML and CSS. <br><a class='text-primary' href="https://github.com/Ravensilk/Updated-Portfolio">Click to go to repository.</a></p>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="carouselimg"><img src="img/neattasks-img.png" class="d-block w-75" alt="..."></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>NeatTasks</h5>
+                    <p>CS50W Capstone. A collaborative project management tool made with Python, Django, Django REST Framework, PostgreSQL and Javascript. <br><a class='text-primary' href="https://github.com/Ravensilk/CS50W-Final-Project-NeatTasks">Click to go to repository.</a></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carouselimg"><img src="img/library-img.png" class="d-block w-75" alt="..."></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>CS50X Capstone. A library management system made with Python, Flask, MySQL and Javascript. It uses the OpenLibrary API to get book details. <br><a class='text-primary' href="https://github.com/Ravensilk/CS50X-Library-Project">Click to go to repository.</a></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="row">
+              <h1 class="display-6 g-0 pb-3 text-center">Languages</h1>
+              <hr>
+              <div class="row pb-3">
+                <div class="col py-1 tstack"><img class="tslogo" src="img/python-logo.svg" alt="python-logo"><h4>Python</h4></div>
+                <div class="col py-1 tstack"><img class="tslogo" src="img/c-logo.svg" alt="c-logo"><h4>C</h4></div>
+                <div class="col py-1 tstack"><img class="tslogo" src="img/php-logo.png" alt="php-logo"><h4>PHP</h4></div>
+                <div class="col py-1 tstack"><img class="tslogo" src="img/js-logo.png" alt="javascript-logo"><h4>Javascript</h4></div>
+                <div class="col py-1 tstack pt-3"><img class="tslogo" src="img/sql-logo.png" alt="sql-logo"><h4>SQL</h4></div>
+              </div>
+              <hr>
+            </div>
+            <div class="row">
+              <h1 class="display-6 g-0 pb-3 text-center">Technologies and Tools</h1>
+              <hr>
+              <div class="row pb-3">
+                <div class="col py-1 tstack"><img class="tslogo2" src="img/flask-logo.png" alt="flask-logo"></div>
+                <div class="col py-1 tstack"><img class="tslogo2" src="img/django-logo.png" alt="django-logo"></div>
+                <div class="col py-1 tstack"><img class="tslogo2" src="img/django-rest-logo.png" alt="django-rest-logo"></div>
+                <div class="col py-1 tstack"><img class="tslogo2" src="img/mysql-logo.png" alt="mysql-logo"></div>
+                <div class="col py-1 tstack"><img class="tslogo" src="img/postgre-logo.png" alt="postgre-logo"><h4>PostgreSQL</h4></div>
+                <div class="col py-1 tstack"><img class="tslogo" src="img/sqla-logo.svg" alt="sqlalchemy-logo"><h4>SQLAlchemy</h4></div>
+                <div class="col py-1 tstack"><img class="tslogo" src="img/html-logo.png" alt="html5-logo"><h4>HTML</h4></div>
+                <div class="col py-1 tstack"><img class="tslogo" src="img/css-logo.png" alt="css3-logo"><h4>CSS</h4></div>
+              </div>
+              <hr>
             </div>
           </div>
         </div>
